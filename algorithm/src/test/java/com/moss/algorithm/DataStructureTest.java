@@ -1,6 +1,7 @@
 package com.moss.algorithm;
 
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 import java.util.Queue;
 import java.util.Stack;
 
@@ -34,5 +35,18 @@ public class DataStructureTest {
         // DFS - Depth-First Search
         // P45. 부분 합 문제
         
+    }
+    
+    @Test
+    public void priorityQueue() {
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>();
+        priorityQueue.offer(100);
+        priorityQueue.offer(5);
+        priorityQueue.offer(3);
+        priorityQueue.offer(200);
+        
+        while(priorityQueue.size() > 0) {
+            System.out.println(priorityQueue.poll());
+        }
     }
 }
