@@ -1,8 +1,11 @@
 package com.moss.algorithm;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Scanner;
 import java.util.Stack;
 
 import org.junit.Test;
@@ -47,6 +50,28 @@ public class DataStructureTest {
         
         while(priorityQueue.size() > 0) {
             System.out.println(priorityQueue.poll());
+        }
+    }
+    
+    @Test
+    public void graphInput() {
+
+        Scanner scanner = new Scanner(System.in);
+        List<List<Integer>> graph = new ArrayList<>();
+        // 컴퓨터 수
+        int computerNum = scanner.nextInt();
+        // 그래프 초기화
+        for (int i = 0; i <= computerNum; i++) {
+            graph.add(new ArrayList<>());
+        }
+        // 연결 수
+        int edgeCount = scanner.nextInt();
+        // 입력
+        for (int i = 0; i < edgeCount; i++) {
+            int node1 = scanner.nextInt();
+            int node2 = scanner.nextInt();
+            graph.get(node1).add(node2);
+            graph.get(node2).add(node1);
         }
     }
 }
