@@ -1,14 +1,13 @@
 package com.moss.algorithm.ds;
 
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-
-import org.junit.Test;
-
-import junit.framework.Assert;
 
 public class binarySearch {
 
@@ -51,11 +50,11 @@ public class binarySearch {
         System.out.println(Arrays.binarySearch(arr, 2));
         int result = Arrays.binarySearch(arr, 100);
         System.out.println(result); // 못찾는 경우 1(arr.length + 1) 값 반환됨
-        Assert.assertEquals(-1 * (arr.length + 1), result);
+        Assertions.assertEquals(-1 * (arr.length + 1), result);
         
         int result2 = Arrays.binarySearch(arr, -10);
         System.out.println(result2); // 못찾는 경우 -1
-        Assert.assertEquals(-1, result2);
+        Assertions.assertEquals(-1, result2);
         
         // 0보다 작으면 못 찾은거임
     }

@@ -1,10 +1,11 @@
 package com.moss.algorithm.kakao;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 
-import org.junit.Test;
-
 public class _2018_04_2 {
+
     @Test
     public void test() {
         int[] food_times = new int[] {6, 1, 3, 6};

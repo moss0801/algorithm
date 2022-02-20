@@ -1,8 +1,8 @@
 package com.moss.algorithm.ds;
 
-import java.util.Stack;
+import org.junit.jupiter.api.Test;
 
-import org.junit.Test;
+import java.util.Stack;
 
 public class StackTest {
 

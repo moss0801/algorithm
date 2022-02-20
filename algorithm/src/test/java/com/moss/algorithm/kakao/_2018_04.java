@@ -1,6 +1,6 @@
 package com.moss.algorithm.kakao;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class _2018_04 {
 

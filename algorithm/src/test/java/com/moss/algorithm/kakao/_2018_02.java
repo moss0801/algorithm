@@ -1,9 +1,9 @@
 package com.moss.algorithm.kakao;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.Arrays;
 import java.util.PriorityQueue;
-
-import org.junit.Test;
 
 public class _2018_02 {
 

@@ -1,9 +1,9 @@
 package com.moss.algorithm.ds;
 
+import org.junit.jupiter.api.Test;
+
 import java.util.LinkedList;
 import java.util.Queue;
-
-import org.junit.Test;
 
 public class QueueTest {
 
