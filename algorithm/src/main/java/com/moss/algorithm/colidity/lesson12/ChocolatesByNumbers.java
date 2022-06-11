@@ -16,22 +16,12 @@ import java.util.Set;
  * otherwise gcd(a, b) = gcd(b, a mod b).]
  * gcd(24,9) -> 24 mod 9 = 6 -> gcd(9,6) -> 9 mod 6 = 3 -> gcd(6,3) -> 6 mod 3 = 0 -> 3
  *
+ * 틀림
  */
 public class ChocolatesByNumbers {
     public int solution(int N, int M) {
-        int count = 1;
-        int start = 0;
-        while(true) {
-            int multi = (N-start)/M;
-            count += multi;
-            start = (start + multi*M) % N;
-            if (start == 0) {
-                return count - 1;
-            }
-            start = (start + M) % N;
-            count++;
-
-        }
+        int gcd = gcd(N, M);
+        return N / gcd;
     }
 
     public int gcd(int a, int b) {

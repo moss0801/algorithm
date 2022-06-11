@@ -11,6 +11,34 @@ import java.util.List;
 
 public class binarySearch {
 
+    public static int bs(int[] A, int key) {
+        int n = A.length;
+        int start = 0;
+        int end = n - 1;
+        int result = -1;
+        while (start <= end) {
+            int mid = (start + end) / 2;
+            if (A[mid] <= key) {
+                start = mid + 1;
+                result = mid;
+            } else {
+                end = mid - 1;
+            }
+        }
+        return result;
+    }
+
+    @Test
+    public void bsTest() {
+        int[] A = new int[]{1,3,5,7,8};
+        int[] inputs = new int[] {4,5,6,8};  // 1,2,2,4
+        for (int input : inputs) {
+            int index = bs(A, input);
+            System.out.println(index);
+        }
+    }
+
+
     static int binarySearch(int[] a, int n, int key) {
         int pl = 0;
         int pr = n - 1;
