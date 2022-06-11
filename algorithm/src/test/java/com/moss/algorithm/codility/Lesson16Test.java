@@ -3,7 +3,7 @@ package com.moss.algorithm.codility;
 import com.moss.algorithm.colidity.lesson16.MaxNonoverlappingSegments;
 import org.junit.jupiter.api.Test;
 
-public class Lessson16Test {
+public class Lesson16Test {
 
     @Test
     public void MaxNonoverlappingSegments() {
